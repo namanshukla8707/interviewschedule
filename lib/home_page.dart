@@ -9,12 +9,12 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  int currentIndex1 = 0;   
-   final screens =const [
+  int currentIndex1 = 0;
+  final screens = const [
     Participant(),
     Text("vipul"),
     Text("rajput"),
-   ];
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,12 +22,14 @@ class _MainPageState extends State<MainPage> {
       bottomNavigationBar: BottomNavigationBar(
         // selectedItemColor: Colors.black,
 
-        selectedLabelStyle:const TextStyle(color: Colors.red),
+        selectedLabelStyle: const TextStyle(color: Colors.red),
         // backgroundColor: Colors.white,
         items: [
           BottomNavigationBarItem(
             icon: Icon(
-              (currentIndex1 == 0) ? Icons.add_circle_outline : Icons.add_circle_outline_outlined,
+              (currentIndex1 == 0)
+                  ? Icons.add_circle
+                  : Icons.add_circle_outline,
               color: Colors.black,
             ),
             label: 'Create',
