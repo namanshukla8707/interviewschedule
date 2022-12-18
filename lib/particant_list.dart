@@ -1,5 +1,6 @@
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+// ignore_for_file: unnecessary_import
+
+import 'package:flutter/material.dart';
 
 class ParticipantList extends StatefulWidget {
   const ParticipantList({super.key});
@@ -11,6 +12,10 @@ class ParticipantList extends StatefulWidget {
 class _ParticipantListState extends State<ParticipantList> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      height: 100,
+      width: 100,
+      color: Colors.blue,
+    );
   }
 }
